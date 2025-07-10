@@ -1,11 +1,10 @@
 #[Info]
 site_name: 赛博侦探罗拉百科
-site_url: https://kooluve.github.io/
+site_url: https://kooluve.github.io/ltcd-wiki
 site_author: Kooluve
 #[UI]
 theme:
   name: material
-  custom_dir: docs/overrides #覆写路径
   # font: #谷歌字体，自行搜索
   #   text: Bitter  #文本字体
   #   code: Roboto Mono  #代码字体
