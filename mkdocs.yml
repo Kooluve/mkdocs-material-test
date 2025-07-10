@@ -1,15 +1,16 @@
-#[Info]
-site_name: 赛博侦探罗拉百科
+site_name: Lora_赛博侦探百科
 site_url: https://kooluve.github.io/ltcd-wiki
 site_author: Kooluve
-#[UI]
+
 theme:
   name: material
   # font: #谷歌字体，自行搜索
-  #   text: Bitter  #文本字体
-  #   code: Roboto Mono  #代码字体
+  # text: Bitter  #文本字体
+  # code: Roboto Mono  #代码字体
   logo: assets/logo.svg #左上角logo，可插入图片链接
-  favicon: assets/logo.svg # 网页icon
+  favicon: assets/logo.png # 网页icon
+  vars:
+    header-height: 20rem
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -33,7 +34,7 @@ theme:
         icon: material/brightness-4
         name: 切换至日间模式
   features:
-    #- header.autohide  #自动隐藏
+    # - header.autohide  #自动隐藏
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
     # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
@@ -52,37 +53,40 @@ theme:
     - content.action.view
     - content.code.annotate
   language: zh # 一些提示性的文字会变成中文
-  icon:
-    repo: fontawesome/brands/github #右上角图标
-    logo: logo
-  nav: 
-    - 主页:
-      - 主页: index.md #.md文件的相对路径
-    - 百科:
-      # - "概念":
-      #     - wiki\concepts\
-      #     - wiki\concepts\
-      - "人物":
-          - wiki\people\ltcd.md
-          - wiki\people\crystallizations.md
-          - wiki\people\watchers.md
-          - wiki\people\others.md
-      # - "事件":
-      #     - wiki\events\
-      # - "梗":
-      #     - wiki\memes\
-      # - "文集":
-      #     - wiki\works\
-      # - "资料":
-      #     - wiki\resources\
-    - 关于:
-      - "关于":
-          - about\about.md
-          - about\edit-guide.md
-  generator: false
-  plugins:
+nav: 
+  - 主页:
+    - 主页: index.md #.md文件的相对路径
+  - 百科:
+    # - "概念":
+    #     - wiki\concepts\
+    #     - wiki\concepts\
+    - "人物":
+        - wiki\people\ltcd.md
+        - wiki\people\crystallizations.md
+        - wiki\people\watchers.md
+        - wiki\people\others.md
+    # - "事件":
+    #     - wiki\events\
+    # - "梗":
+    #     - wiki\memes\
+    # - "文集":
+    #     - wiki\works\
+    # - "资料":
+    #     - wiki\resources\
+  - 关于:
+    - "关于":
+        - about\about.md
+        - about\edit-guide.md
+
+plugins:
   - search #搜索配置
-  markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
+  # - git-revision-date-localized:
+  #     enabled: true
+  #     type: iso_date
+  #     enable_creation_date: false
+  #     exclude:
+  #       - index.md
+markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
   - abbr
   - attr_list
   - admonition
@@ -100,12 +104,7 @@ theme:
   - pymdownx.snippets
   - pymdownx.smartsymbols
   - pymdownx.tilde
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format:
-            !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
+  - pymdownx.superfences
   - pymdownx.arithmatex: # latex支持
       generic: true
   - toc:
@@ -114,10 +113,10 @@ theme:
       anchor_linenums: true
       linenums: true # 显示行号
       # auto_title: true # 显示编程语言名称
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+
+extra_css:
+  - stylesheets/extra.css
