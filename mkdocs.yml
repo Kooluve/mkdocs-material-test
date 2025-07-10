@@ -1,4 +1,5 @@
-site_name: My Docs
-site_url: https://mydomain.org/mysite
+site_name: 赛博侦探罗拉百科
+site_url: https://kooluve.github.io/ltcd-wiki
+site_author: Kooluve
 theme:
   name: material
