@@ -56,29 +56,29 @@ theme:
     repo: fontawesome/brands/github #右上角图标
     logo: logo
   nav: 
-  - 主页:
-    - 主页: index.md  #.md文件的相对路径
-  - 百科:
-    - "concepts":
-        - wiki\concepts\
-        - wiki\concepts\
-    - "people":
-        - wiki\people\ltcd.md
-        - wiki\people\crystallizations.md
-        - wiki\people\watchers.md
-        - wiki\people\others.md
-    - "events":
-        #- wiki\events\
-    - "memes":
-        #- wiki\memes\
-    - "works":
-        #- wiki\works\
-    - "resources":
-        #- wiki\resources\
-  - 关于:
-    - "resources":
-        - wiki\about\about.md
-        - wiki\about\edit-guide.md
+    - 主页:
+      - 主页: index.md #.md文件的相对路径
+    - 百科:
+      # - "概念":
+      #     - wiki\concepts\
+      #     - wiki\concepts\
+      - "人物":
+          - wiki\people\ltcd.md
+          - wiki\people\crystallizations.md
+          - wiki\people\watchers.md
+          - wiki\people\others.md
+      # - "事件":
+      #     - wiki\events\
+      # - "梗":
+      #     - wiki\memes\
+      # - "文集":
+      #     - wiki\works\
+      # - "资料":
+      #     - wiki\resources\
+    - 关于:
+      - "关于":
+          - about\about.md
+          - about\edit-guide.md
   generator: false
   plugins:
   - search #搜索配置
