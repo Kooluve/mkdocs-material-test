@@ -57,24 +57,24 @@ nav:
   - 主页:
     - 主页: index.md #.md文件的相对路径
   # - 概念:
-  #   - concepts\
+  #   - concepts/
   - 人物:
-    - 赛博侦探: people\ltcd.md
-    - 测试: people\测试.md
-  #   - people\crystallizations.md
-  #   - people\watchers.md
-  #   - people\others.md
+    - 赛博侦探: people/ltcd.md
+    - 测试: people/测试.md
+  #   - people/crystallizations.md
+  #   - people/watchers.md
+  #   - people/others.md
   # - 事件:
-  #   - events\
+  #   - events/
   # - 梗:
-  #   - memes\
+  #   - memes/
   # - 文集:
-  #   - works\
+  #   - works/
   # - 资料:
-  #   - resources\
+  #   - resources/
   - 关于:
-    - about\about.md
-    - about\edit-guide.md
+    - about/about.md
+    - about/edit-guide.md
 
 plugins:
   - search:
