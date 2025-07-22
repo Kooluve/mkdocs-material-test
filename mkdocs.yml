@@ -73,8 +73,8 @@ nav:
   # - 资料:
   #   - resources/
   - 关于:
-    - about/about.md
-    - about/edit-guide.md
+    - 关于: about/about.md
+    - 关于: about/edit-guide.md
 
 plugins:
   - search:
