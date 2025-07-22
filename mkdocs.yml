@@ -1,4 +1,4 @@
-site_name: Lora_赛博侦探百科
+site_name: 赛博侦探百科
 site_url: https://kooluve.github.io/ltcd-wiki
 site_author: Kooluve
 
@@ -59,8 +59,8 @@ nav:
   # - 概念:
   #   - concepts\
   - 人物:
-    - people\ltcd.md
-    - people\测试.md
+    - 赛博侦探: people\ltcd.md
+    - 测试: people\测试.md
   #   - people\crystallizations.md
   #   - people\watchers.md
   #   - people\others.md
