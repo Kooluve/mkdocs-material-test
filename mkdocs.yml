@@ -56,30 +56,28 @@ theme:
 nav: 
   - 主页:
     - 主页: index.md #.md文件的相对路径
-  - 百科:
-    # - "概念":
-    #     - wiki\concepts\
-    #     - wiki\concepts\
-    - "人物":
-        - wiki\people\ltcd.md
-        - wiki\people\crystallizations.md
-        - wiki\people\watchers.md
-        - wiki\people\others.md
-    # - "事件":
-    #     - wiki\events\
-    # - "梗":
-    #     - wiki\memes\
-    # - "文集":
-    #     - wiki\works\
-    # - "资料":
-    #     - wiki\resources\
+  # - 概念:
+  #   - concepts\
+  - 人物:
+    - people\ltcd.md
+    - people\crystallizations.md
+    - people\watchers.md
+    - people\others.md
+  # - 事件:
+  #   - events\
+  # - 梗:
+  #   - memes\
+  # - 文集:
+  #   - works\
+  # - 资料:
+  #   - resources\
   - 关于:
-    - "关于":
-        - about\about.md
-        - about\edit-guide.md
+    - about\about.md
+    - about\edit-guide.md
 
 plugins:
-  - search #搜索配置
+  - search:
+      # jieba_dict: dict.txt
   # - git-revision-date-localized:
   #     enabled: true
   #     type: iso_date
