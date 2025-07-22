@@ -85,6 +85,7 @@ plugins:
   #     enable_creation_date: false
   #     exclude:
   #       - index.md
+  - glightbox
 markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
   - abbr
   - attr_list
