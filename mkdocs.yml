@@ -60,9 +60,10 @@ nav:
   #   - concepts\
   - 人物:
     - people\ltcd.md
-    - people\crystallizations.md
-    - people\watchers.md
-    - people\others.md
+    - people\测试.md
+  #   - people\crystallizations.md
+  #   - people\watchers.md
+  #   - people\others.md
   # - 事件:
   #   - events\
   # - 梗:
